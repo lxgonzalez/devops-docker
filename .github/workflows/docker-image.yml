@@ -19,10 +19,10 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: programmingroup
+          username: lxgonzalez
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
         
       - name: Build and push Docker image
         run: |
-          docker build . -t programmingroup/my-profile-lgonzalez:latest
-          docker push programmingroup/my-profile-lgonzalez:latest
+          docker build . -t lxgonzalez/devops-docker:latest
+          docker push lxgonzalez/devops-docker:latest
